@@ -1,0 +1,56 @@
+body {
+    background: #bdbdbd;
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+header {
+    background: white;
+    padding: 10px;
+    border: 0;
+    margin: 0;
+
+}
+
+header h1 {
+    margin: 0;
+}
+
+div.post h2, div.post p {
+    padding: 10px;
+    margin:0;
+}
+
+/* To any div or any element with the class post-header inside post, but to the first child*/
+/* To any div inside post-header, that at the same time is a child of post, aply this rule   */
+div.post .post-header div:first-child {
+    display: inline-block;
+    width: 80%;  /* 80% of the parent*/
+}
+
+/* To any div or any element with the class post-header inside post, but to the first child*/
+/* To any div inside post-header, that at the same time is a child of post, aply this rule   */
+div.post .post-header div:last-child {
+    display: inline-block;
+    width: 20%;  /* 80% of the parent*/
+    text-align: right;
+    padding: 10px;
+    color: gray;
+}
+
+div.post {
+    background: white;
+    margin-top: 10px;
+}
+
+div.post img {
+    width: 100%;
+}
+
+div.container {
+    width: 600px;
+    margin: auto;
+}
